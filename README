@@ -1,3 +1,18 @@
 Ένα απλό πρόγραμμα σε Java χρησιμοποιώντας τις gtk/gnome βιβλιοθήκες.
 Το πρόγραμμα απλά κλείνει πατώντας το κουμπί καθώς και κλείνοντας το παράθυρο.
+
+Δείτε περισσότερα στο http://forum.ubuntu-gr.org/viewtopic.php?f=9&t=3601
+
+Απαιτεί την εγκατάσταση μεταγλωττιστή javac
+sudo apt-get install default-jdk
+
+Απαιτεί την εγκατάσταση του gtk-java, με την εντολή:
+sudo apt-get install libjava-gnome-java
+
+Έπειτα, για μεταγλώττιση τρέχουμε
+javac -cp /usr/share/java/gtk.jar ExampleQuit.java
+
+Τέλος, για εκτέλεση τρέχουμε
+java -cp /usr/share/java/gtk.jar:. ExampleQuit
+
 Γιάννης Χριστοφάκης.
